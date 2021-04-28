@@ -1,0 +1,75 @@
+@font-face{src: url(fonts/Roboto-Regular.ttf); font-family: roboto;}
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: roboto;}
+
+.main_div{width: 100vw; height: 100vh;  display: flex;}
+
+.HomePage{flex: 1; background-color: white; border: 1px solid rgb(192, 192, 192);
+    overflow-y: scroll;  border-right: none;}
+
+.ChatPage{flex: 2; background-color: white; border: 1px solid rgb(192, 192, 192);}
+
+.header{background-color: rgb(221, 221, 221); width:33.33% ; height: 65px;
+display: flex; justify-content: center; align-items: center; position: fixed;}
+
+.profile{height: 70px; background-color:transparent; margin-left: 10px;
+flex: 5;}
+
+.status,.newchat,.menu{ background-color:transparent; margin-left: 10px;
+flex: 1;display: flex; justify-content: center; align-items: center; border-radius: 100px;}
+
+.status a:active,.newchat a:active,.menu a:active{
+    background-color: rgb(177, 176, 176); border-radius: 100px;
+    display: flex; justify-content: center; align-items: center;
+width: 40px; height: 40px;}
+
+.profile_image{ width: 50px; height: 50px; background-color: transparent;
+border-radius: 100px; margin: 10px 0; display: flex; justify-content: center; 
+align-items: center;}
+
+.search{width: 33.33%; height: 50px; background-color: rgb(236, 236, 236);
+    display: inline-flex; justify-content: center; align-items: center; 
+position: fixed; margin-top: 65px;}
+
+/* .search_input{width: 70%; height: 40px; background-color: blue;}
+.search_img{width: 10%; height: 40px; background-color: black;} */
+
+.search input{ border: none; outline: none ;   width: 80%;
+    height: 40px; border-radius: 0 20px 20px 0; padding: 10px; font-size: 13px;
+padding-left: 20px;}
+
+.search input::placeholder{color: rgba(144, 144, 144, 0.6);}    
+
+.search img{background-color:white ; border-radius: 20px 0 0 20px;
+    padding: 8px 10px; cursor: pointer;}
+
+.chatList{width: 100%; background-color: black; margin-top: 115px;}    
+
+.mainList{width: 100%; height: 80px; background-color: white; cursor: pointer;
+    border-bottom: 1px solid rgba(144, 144, 144, 0.5); display: flex;}
+.mainList:hover{background-color:rgb(236, 236, 236) ;} 
+.mainList:active{background-color: rgb(221, 221, 221);}   
+
+.listProfile{background-color:transparent; justify-content: center; align-items: center; 
+    display: flex; margin: 0 10px; flex: 1;}
+
+ .aboutChat{ flex: 6; display: grid; }   
+
+ .name_time{ display: flex; justify-content: center;
+     align-items: center; grid: 1;}
+
+ .message{ grid: 1; margin: 5px 10px 10px 0; overflow: hidden; font-size: 13px;
+     text-align:justify ;}
+
+ .name{flex: 5; margin-top: 10px;}
+ .time{flex: 1; margin-top: 10px; font-size: 14px;}
+
+ .name p{font-size: 22px;}
+
+
+    
+
+
+ .ChatPage{text-align: center;}
+ .ChatPage h1 , h2{margin-top: 130px;}
+
+ .AppName{font-size: 50px;}
